@@ -32,7 +32,6 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, viewport-fit=cover ">
-        
       
         <!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
 		<link rel="icon" href="img/favicon.ico" type="image/ico" sizes="16x16">
@@ -253,16 +252,13 @@ IM-HTML-E-Visicoil-Rov.3-1113 </p></div></div></span>
 );*/
   </script> -->
 
-<video width="850" height="479" controls autoplay loop>
+<video width="850" height="479" loop="true" autoplay="autoplay" id="vid">
   <source src="http://softweavertech.com/projects/visicoil/videos/Green_man_turning_1920x1080_20001-0180_001.mp4" type="video/mp4">
 </video>
-
 <script>
-  /*
 $( window ).load(function() {
           $( '#vid' ).get(0).play();
- });
-     */
+ });  
 </script>
 </div>
 
@@ -522,7 +518,15 @@ function showDivs(n) {
 <div id="content_see_it4" class="tab-pane fade">
 <div class="see_it4_img">
 <div id="vid-jun">
+<video width="800" height="480" loop="true" autoplay="autoplay" id="vid-visibility">  
 
+<source src="http://softweavertech.com/projects/visicoil/videos/markerplace.mp4" type="video/mp4">
+</video>
+<script>
+$( window ).load(function() {          
+$( '#vid-visibility' ).get(0).play(); 
+});
+</script>
 </div>
 <div class="see_it4_right">
 <div class="imf-div">
@@ -720,7 +724,15 @@ MRI/CT fusion and IGRT
             <div class="col-sm-8">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
 			   <div class="pop-content">
+		<video loop="true" autoplay="autoplay" id="popvideo">
+  <source src="http://softweavertech.com/projects/visicoil/videos/popupvideo.mp4" type="video/mp4">
+   </video>
+   <script>
 
+$( window ).load(function() {
+          $( '#popvideo' ).get(0).play();
+ });
+</script>
 			   
 			   </div>
             </div>
@@ -961,12 +973,15 @@ MRI/CT fusion and IGRT
 	
 	<div class="aut-firt">
 	<div class="video-div">
-
+<video width="850" height="479" loop="true" autoplay="autoplay" id="vidsec">
+  <source src="http://softweavertech.com/projects/visicoil/videos/Green_man_turning_1920x1080_20001-0180_001.mp4" type="video/mp4">
+</video>
 <script>
 
  $(document).ready(function() { 
- 
-
+      $( '#vidsec' ).get(0).play();
+   
+});
 function treat_new(){
 
 var t = setTimeout(function(){ $('.aut-firt').fadeOut(); }, 2000);
@@ -1198,7 +1213,15 @@ function carousel() {
             </div>
             <div class="col-sm-6">
                 
+			   		<video loop="true" autoplay="autoplay" id="popvideotreat">
+  <source src="http://softweavertech.com/projects/visicoil/videos/pop-video.mp4" type="video/mp4">
+   </video>
+   <script>
 
+$( window ).load(function() {
+          $( '#popvideotreat' ).get(0).play();
+ });
+</script> 
             </div>
           </div>
 		  <div class="row pop-inner sec">
@@ -1330,7 +1353,15 @@ function carousel() {
 	
 	<div id="content_treat_it3" class="tab-pane fade">
 
+	<video width="900" height="640" loop="true" autoplay="autoplay" id="eudvideo">
+  <source src="http://softweavertech.com/projects/visicoil/videos/markervideo.mp4" type="video/mp4">
+   </video>
+   <script>
 
+$( window ).load(function() {
+          $( '#eudvideo' ).get(0).play();
+ });
+</script>
 <div class="Proven">
 	<p>VISICOIL's Proven Efficiency and Ease of Use  <br>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enables you to Focus on your Patients</p>
@@ -1340,7 +1371,15 @@ function carousel() {
 	</div>
 	<div id="content_treat_it4" class="tab-pane fade">
 	<div class="placement-div">
+		<video width="800" height="600" loop="true" autoplay="autoplay" id="eusvid">
+  <source src="http://softweavertech.com/projects/visicoil/videos/eusvideo.mp4" type="video/mp4">
+   </video>
+   <script>
 
+$( window ).load(function() {
+          $( '#eusvid' ).get(0).play();
+ });
+</script>
 	
 	<p class="eus">This simulation procedure is demonstrated by Dr. Chris Thompson at<br/> Brigham & Women's Hospital, Boston MA.<br/> The procedure demonstrates placing Qty (2) of 0.35mm x 1cm VISICOIL via EUS.<br/> The EUS catheter being utilized is the Beacon Endoscopic Needle Platform.</p> </div>
 	</div>

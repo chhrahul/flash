@@ -55,21 +55,23 @@
         <icon height="167" src="res/icon/ios/icon-83.5@2x.png" width="167" /> 
         
        <!?—?1334x1334 ?
-       <splash src=”res/screen/ios/Default@2x~iphone~anyany.png” />
+       <splash src="res/screen/ios/Default@2x~iphone~anyany.png" />
        <!?—?750x1334 ?
-       <splash src=”res/screen/ios/Default@2x~iphone~comany.png” />
+       <splash src="res/screen/ios/Default@2x~iphone~comany.png" />
        <!?—?1334x750 ?
-       <splash src=”res/screen/ios/Default@2x~iphone~comcom.png” />
+       <splash src="res/screen/ios/Default@2x~iphone~comcom.png" />
        <!?—?2208x2208 ?
-       <splash src=”res/screen/ios/Default@3x~iphone~anyany.png” />
+       <splash src="res/screen/ios/Default@3x~iphone~anyany.png" />
        <!?—?2208x1242 ?
-       <splash src=”res/screen/ios/Default@3x~iphone~anycom.png” />
+       <splash src="res/screen/ios/Default@3x~iphone~anycom.png" />
        <!?—?1242x2208 ?
-       <splash src=”www/splash/ios/Default@3x~iphone~comany.png” />
+       <splash src="www/splash/ios/Default@3x~iphone~comany.png" />
        <!?—?2732x2732 ?
-       <splash src=”res/screen/ios/Default@2x~ipad~anyany.png” />
+       <splash src="res/screen/ios/Default@2x~ipad~anyany.png" />
        <!?—?1278x2732 ?
-       <splash src=”res/screen/ios/Default@2x~ipad~comany.png” />
+       <splash src="res/screen/ios/Default@2x~ipad~comany.png" />
+       
+       <splash src="res/screen/ios/Default@2x~universal~anyany.png" />
 
       
         <allow-intent href="itms:*" />

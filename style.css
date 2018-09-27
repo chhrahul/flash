@@ -1,4 +1,11 @@
 body{margin: 0;padding: 0;font-family: 'Lato', sans-serif !important;background:#fff !important;width: vh100;height:vh100;position:relative;}
+
+body {
+ padding-top: constant(safe-area-inset-top); /* iOS 11.0 */
+ padding-top: env(safe-area-inset-top); /* iOS 11.2 */
+}
+
+
 h1{color:#fff;margin:30px auto;display:table;text-align:center;}
 i.fa {font-size: 25px;padding: 9px;width: 30px;text-align: center;text-shadow:1px 1px 1px #000;}
 .leftMenu{height: 100%;background-color: #454545;position: fixed;right: 0;top:0;width: 70px;transition: all ease 1s;overflow: hidden;transition: .5s cubic-bezier(.8, .5, .2, 1.4);box-shadow: 1px 4px 8px 4px rgba(0,0,0,0.3);}

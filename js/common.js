@@ -198,6 +198,21 @@ function downloadDoc2() {
 	});
 
 }
+
+function open_pdf_ios(f)
+{
+    PDFReader.open(f, options, successpdfios, errorpdfios);
+}
+
+function successpdfios()
+{
+    alert('success')
+}
+
+function errorpdfios()
+{
+    alert('error')
+}
 function downloadDoc3() {
     
 	

@@ -254,19 +254,22 @@ IM-HTML-E-Visicoil-Rov.3-1113 </p></div></div></span>
 
 
 
-<video id="vid" width="600" height="379" controls autoplay loop>
+
+<video width="850" height="479" loop="true" autoplay="autoplay" id="vid">
   <source src="http://softweavertech.com/projects/visicoil/videos/Green_man_turning_1920x1080_20001-0180_001.mp4" type="video/mp4">
 </video>
 
-<script type="text/javascript">
+<script>
 $(function () {
   if (!navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
-    $( window ).load(function() {          
-   $( '#vid' ).get(0).play(); 
-});
+$( window ).load(function() {
+          $( '#vid' ).get(0).play();
+ });
   }
-});
+}); 
 </script>
+</div>
+
 
 </div>
 

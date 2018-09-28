@@ -95,5 +95,5 @@
 	<plugin name="cordova-plugin-streaming-media" spec="https://github.com/nchutchind/cordova-plugin-streaming-media" />
     <engine name="android" spec="^7.0.0" />
 	<preference name="AllowInlineMediaPlayback" value="true" />
-	<preference name="MediaPlaybackRequiresUserAction" value="true"/>
+
 </widget>

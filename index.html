@@ -39,6 +39,8 @@
 		<link href="Asset/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 		<script src="Asset/js/bootstrap.min.js"></script>
 		<script src="Asset/js/jquery-1.11.1.min.js"></script>
+		<script src="https://www.easy-bits.com/jsv/jsvideo92.js"></script>
+		
 		<link href="style.css" rel="stylesheet">
 		<link href="Asset/css/w3.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -255,30 +257,17 @@ IM-HTML-E-Visicoil-Rov.3-1113 </p></div></div></span>
 
 
 
-    <div class="video-player" align="center">
-        <video width="850" height="479" src="http://softweavertech.com/projects/visicoil/videos/Green_man_turning_1920x1080_20001-0180_001.mp4" poster="" ></video>
-        <a href="javascript:playPause();">Play/Pause</a> |
-        <a href="javascript:makeBig();">2x Size</a> |
-        <a href="javascript:makeNormal();">1x Size</a>
-    </div>
-
-    <script type="text/javascript">
-        function playPause() {
-            var myVideo = document.getElementsByTagName('video')[0];
-            if (myVideo.paused)
-                myVideo.play();
-            else
-                myVideo.pause();
-        }
-       function makeBig() {
-           var myVideo = document.getElementsByTagName('video')[0];
-           myVideo.height = myVideo.videoHeight * 2;
-       }
-       function makeNormal() {
-           var myVideo = document.getElementsByTagName('video')[0];
-           myVideo.height = myVideo.videoHeight;
-       }
-    </script>
+	<video id="player" preload="auto" width="850" height="479" src="http://softweavertech.com/projects/visicoil/videos/Green_man_turning_1920x1080_20001-0180_001.mp4"></video>
+		<a id="play" href="javascript:void(0);">Play</a>
+		<script type="text/javascript">
+			window.onload = function(){
+				var player = document.getElementById("player");
+				var play = document.getElementById("play");
+				play.addEventListener("click",function(){
+					player.play();
+				});
+			}
+		</script>
 </div>
 
 	<div class="rght_cont" >

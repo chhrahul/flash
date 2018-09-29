@@ -91,7 +91,7 @@
 	<preference name="AllowInlineMediaPlayback" value="true"/>
 	<preference name="TopActivityIndicator" value="white"/>
 	
-	<preference name="AutoHideSplashScreen" value="true" />
+	<preference name="AutoHideSplashScreen" value="false" />
 	 <preference name="SplashScreenDelay" value="10000" />
 
 </widget>

@@ -93,6 +93,11 @@
 	
 	<preference name="AutoHideSplashScreen" value="true" />
 	<preference name="ShowSplashScreenSpinner" value="true"/>
-	 <preference name="SplashScreenDelay" value="10000" />
+	<preference name="splashscreen" value="splash" />
+    <preference name="splashScreenDelay" value="10000" />
+	 
+	 <feature name="SplashScreen">
+    <param name="ios-package" value="CDVSplashScreen" />
+    </feature>
 
 </widget>

@@ -99,12 +99,8 @@
 	<preference name="MediaPlaybackAllowsAirPlay" value="false"/>
 	<preference name="MediaPlaybackRequiresUserAction" value="false"/>
 	<preference name="AllowInlineMediaPlayback" value="true"/>
-	<preference name="BackupWebStorage" value="local"/>
 	<preference name="TopActivityIndicator" value="white"/>
 	
 	
-	<feature name="SplashScreen">
-    <param name="ios-package" value="CDVSplashScreen" />
-   </feature>
 
 </widget>

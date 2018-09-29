@@ -92,6 +92,7 @@
 	<preference name="TopActivityIndicator" value="white"/>
 	
 	<preference name="AutoHideSplashScreen" value="true" />
+	<preference name="ShowSplashScreenSpinner" value="true"/>
 	 <preference name="SplashScreenDelay" value="10000" />
 
 </widget>

@@ -96,6 +96,6 @@
     <engine name="android" spec="^7.0.0" />
 	<preference name="AllowInlineMediaPlayback" value="true" />
 	<preference name="EnableViewportScale" value="true"/>
-	<preference name="MediaPlaybackRequiresUserAction" value="true"/>
+	<preference name="MediaPlaybackRequiresUserAction" value="false"/>
 
 </widget>

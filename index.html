@@ -261,11 +261,11 @@ IM-HTML-E-Visicoil-Rov.3-1113 </p></div></div></span>
 
 <script>
 /*
-$( window ).load(function() {
+
     $( "#vid" ).get(0).play(); 
- });
+
  */
- 
+ $( window ).load(function() {
  var videoUrl = http://softweavertech.com/projects/visicoil/videos/Green_man_turning_1920x1080_20001-0180_001.mp4;
 
   // Just play a video
@@ -314,7 +314,8 @@ $( window ).load(function() {
   window.plugins.streamingMedia.pauseAudio();
 
   // Resume current audio (iOS only)
-  window.plugins.streamingMedia.resumeAudio();  
+  window.plugins.streamingMedia.resumeAudio(); 
+ });  
 </script>
 </div>
 

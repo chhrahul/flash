@@ -255,65 +255,14 @@ IM-HTML-E-Visicoil-Rov.3-1113 </p></div></div></span>
 
 
 
-
+<video width="850" height="479" loop="true" id="vid" autoplay="autoplay" webkit-playsinline playsinline >
+  <source src="http://softweavertech.com/projects/visicoil/videos/Green_man_turning_1920x1080_20001-0180_001.mp4" type="video/mp4">
+</video>
 
 <script>
-/*
-
+$( window ).load(function() {
     $( "#vid" ).get(0).play(); 
-
- */
- $( window ).load(function() {
- var videoUrl = http://softweavertech.com/projects/visicoil/videos/Green_man_turning_1920x1080_20001-0180_001.mp4;
-
-  // Just play a video
-  window.plugins.streamingMedia.playVideo(videoUrl);
-
-  // Play a video with callbacks
-  var options = {
-    successCallback: function() {
-      console.log("Video was closed without error.");
-    },
-    errorCallback: function(errMsg) {
-      console.log("Error! " + errMsg);
-    },
-    orientation: 'landscape',
-    shouldAutoClose: true,  // true(default)/false
-    controls: true // true(default)/false. Used to hide controls on fullscreen
-  };
-  window.plugins.streamingMedia.playVideo(videoUrl, options);
-
-
-  var audioUrl = STREAMING_AUDIO_URL;
-
-  // Play an audio file (not recommended, since the screen will be plain black)
-  window.plugins.streamingMedia.playAudio(audioUrl);
-
-  // Play an audio file with options (all options optional)
-  var options = {
-    bgColor: "#FFFFFF",
-    bgImage: "<SWEET_BACKGROUND_IMAGE>",
-    bgImageScale: "fit", // other valid values: "stretch", "aspectStretch"
-    initFullscreen: false, // true is default. iOS only.
-    keepAwake: false, // prevents device from sleeping. true is default. Android only.
-    successCallback: function() {
-      console.log("Player closed without error.");
-    },
-    errorCallback: function(errMsg) {
-      console.log("Error! " + errMsg);
-    }
-  };
-  window.plugins.streamingMedia.playAudio(audioUrl, options);
-
-  // Stop current audio
-  window.plugins.streamingMedia.stopAudio();
-
-  // Pause current audio (iOS only)
-  window.plugins.streamingMedia.pauseAudio();
-
-  // Resume current audio (iOS only)
-  window.plugins.streamingMedia.resumeAudio(); 
- });  
+ });
 </script>
 </div>
 
@@ -576,9 +525,9 @@ function showDivs(n) {
 <div id="content_see_it4" class="tab-pane fade">
 <div class="see_it4_img">
 <div id="vid-jun">
-<video width="800" height="480" loop="true" autoplay="autoplay" id="vid-visibility">  
+<video width="800" height="480" loop="true" autoplay="autoplay" id="vid-visibility" webkit-playsinline playsinline>  
 
-<source src="" type="video/mp4">
+<source src="http://softweavertech.com/projects/visicoil/videos/markerplace.mp4" type="video/mp4">
 </video>
 <script>
 $( window ).load(function() {          
@@ -782,8 +731,8 @@ MRI/CT fusion and IGRT
             <div class="col-sm-8">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
 			   <div class="pop-content">
-		<video loop="true" autoplay="autoplay" id="popvideo">
-  <source src="" type="video/mp4">
+	<video loop="true" autoplay="autoplay" id="popvideo" webkit-playsinline playsinline>
+  <source src="http://softweavertech.com/projects/visicoil/videos/popupvideo.mp4" type="video/mp4">
    </video>
    <script>
 
@@ -1031,8 +980,8 @@ $( window ).load(function() {
 	
 	<div class="aut-firt">
 	<div class="video-div">
-<video width="850" height="479" loop="true" autoplay="autoplay" id="vidsec">
-  <source src="" type="video/mp4">
+<video width="850" height="479" loop="true" autoplay="autoplay" id="vidsec" webkit-playsinline playsinline>
+  <source src="http://softweavertech.com/projects/visicoil/videos/Green_man_turning_1920x1080_20001-0180_001.mp4" type="video/mp4">
 </video>
 <script>
 
@@ -1271,11 +1220,10 @@ function carousel() {
             </div>
             <div class="col-sm-6">
                 
-			   		<video loop="true" autoplay="autoplay" id="popvideotreat">
-  <source src="" type="video/mp4">
+			   		<video loop="true" autoplay="autoplay" id="popvideotreat" webkit-playsinline playsinline>
+  <source src="http://softweavertech.com/projects/visicoil/videos/pop-video.mp4" type="video/mp4">
    </video>
    <script>
-
 $( window ).load(function() {
           $( '#popvideotreat' ).get(0).play();
  });
@@ -1411,7 +1359,7 @@ $( window ).load(function() {
 	
 	<div id="content_treat_it3" class="tab-pane fade">
 
-	<video width="900" height="640" loop="true" autoplay="autoplay" id="eudvideo">
+	<video width="900" height="640" loop="true" autoplay="autoplay" id="eudvideo" webkit-playsinline playsinline>
   <source src="http://softweavertech.com/projects/visicoil/videos/markervideo.mp4" type="video/mp4">
    </video>
    <script>
@@ -1429,10 +1377,10 @@ $( window ).load(function() {
 	</div>
 	<div id="content_treat_it4" class="tab-pane fade">
 	<div class="placement-div">
-		<video width="800" height="600" loop="true" autoplay="autoplay" id="eusvid">
-  <source src="" type="video/mp4">
+		<video width="800" height="600" loop="true" autoplay="autoplay" id="eusvid" webkit-playsinline playsinline>
+  <source src="http://softweavertech.com/projects/visicoil/videos/eusvideo.mp4" type="video/mp4">
    </video>
-   <script>
+   <script>  
 
 $( window ).load(function() {
           $( '#eusvid' ).get(0).play();

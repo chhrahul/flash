@@ -96,6 +96,6 @@
 	<preference name="AutoHideSplashScreen" value="true" />
 	<preference name="ShowSplashScreenSpinner" value="true"/>
 	<preference name="splashscreen" value="splash" />
-    <preference name="splashScreenDelay" value="3000" />
+    <preference name="splashScreenDelay" value="30000" />
 	 
 </widget>

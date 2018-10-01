@@ -92,9 +92,9 @@
 					</li>
 					<li><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it2"><span class="ap-main"><div class="img-men"><img src="img/treat2.png"></div> <div class="text-men"> Proven Efficiency and <br/>Reliability</div></span></a>
 					</li>
-					<li><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it3"><span class="ap-main"><div class="img-men"><img src="img/treat3.png"></div> <div class="text-men"> Marker Placement</div></span></a>
+					<li><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it3"><span class="ap-main"><div class="img-men"><img src="img/treat3.png"></div> <div class="text-men video_second_marker"> Marker Placement</div></span></a>
 					</li>
-					<li><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it4"><span class="ap-main"><div class="img-men"><img src="img/treat4.png"></div> <div class="text-men"> EUS Placement <br/>Procedure</div></span></a>
+					<li><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it4"><span class="ap-main"><div class="img-men"><img src="img/treat4.png"></div> <div class="text-men first_vid_EUS" > EUS Placement <br/>Procedure</div></span></a>
 					</li>
 					<li><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it5"><span class="ap-main"><div class="img-men"><img src="img/treat5.png"></div> <div class="text-men"> Veginal Cuff</div></span></a>
 					</li>
@@ -251,6 +251,7 @@ IM-HTML-E-Visicoil-Rov.3-1113 </p></div></div></span>
     }
 );*/
   </script> -->
+
 
 
 
@@ -526,7 +527,7 @@ function showDivs(n) {
 <div id="vid-jun">
 <video width="800" height="480" loop="true" autoplay="autoplay" id="vid-visibility" webkit-playsinline playsinline>  
 
-<source src="http://softweavertech.com/projects/visicoil/videos/markerplace.mp4" type="video/mp4">
+<source src="" type="video/mp4">
 </video>
 <script>
 $( window ).load(function() {          
@@ -731,7 +732,7 @@ MRI/CT fusion and IGRT
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
 			   <div class="pop-content">
 	<video loop="true" autoplay="autoplay" id="popvideo" webkit-playsinline playsinline>
-  <source src="http://softweavertech.com/projects/visicoil/videos/popupvideo.mp4" type="video/mp4">
+  <source src="" type="video/mp4">
    </video>
    <script>
 
@@ -980,7 +981,7 @@ $( window ).load(function() {
 	<div class="aut-firt">
 	<div class="video-div">
 <video width="850" height="479" loop="true" autoplay="autoplay" id="vidsec" webkit-playsinline playsinline>
-  <source src="http://softweavertech.com/projects/visicoil/videos/Green_man_turning_1920x1080_20001-0180_001.mp4" type="video/mp4">
+  <source src="" type="video/mp4">
 </video>
 <script>
 
@@ -1220,7 +1221,7 @@ function carousel() {
             <div class="col-sm-6">
                 
 			   		<video loop="true" autoplay="autoplay" id="popvideotreat" webkit-playsinline playsinline>
-  <source src="http://softweavertech.com/projects/visicoil/videos/pop-video.mp4" type="video/mp4">
+  <source src="" type="video/mp4">
    </video>
    <script>
 $( window ).load(function() {
@@ -1359,13 +1360,17 @@ $( window ).load(function() {
 	<div id="content_treat_it3" class="tab-pane fade">
 
 	<video width="900" height="640" loop="true" autoplay="autoplay" id="eudvideo" webkit-playsinline playsinline>
-  <source src="http://softweavertech.com/projects/visicoil/videos/markervideo.mp4" type="video/mp4">
+  <source src="" type="video/mp4">
    </video>
    <script>
 
-$( window ).load(function() {
+$(document).ready(function(){
+$(".video_second_marker").click(function(){
+$(window).load(function() {
           $( '#eudvideo' ).get(0).play();
  });
+});
+});
 </script>
 <div class="Proven">
 	<p>VISICOIL's Proven Efficiency and Ease of Use  <br>
@@ -1377,13 +1382,16 @@ $( window ).load(function() {
 	<div id="content_treat_it4" class="tab-pane fade">
 	<div class="placement-div">
 		<video width="800" height="600" loop="true" autoplay="autoplay" id="eusvid" webkit-playsinline playsinline>
-  <source src="http://softweavertech.com/projects/visicoil/videos/eusvideo.mp4" type="video/mp4">
+  <source src="" type="video/mp4">
    </video>
-   <script>  
-
-$( window ).load(function() {
+ <script>  
+$(document).ready(function(){
+$(".first_vid_EUS").click(function(){
+$(window).load(function() {
           $( '#eusvid' ).get(0).play();
  });
+});
+});
 </script>
 	
 	<p class="eus">This simulation procedure is demonstrated by Dr. Chris Thompson at<br/> Brigham & Women's Hospital, Boston MA.<br/> The procedure demonstrates placing Qty (2) of 0.35mm x 1cm VISICOIL via EUS.<br/> The EUS catheter being utilized is the Beacon Endoscopic Needle Platform.</p> </div>

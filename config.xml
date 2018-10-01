@@ -65,7 +65,6 @@
 	   <splash src="res/screen/ios/Default@2x~universal~anyany.png" platform="ios" width="2732" height="2732"/>
        <splash src="res/screen/ios/splash.png" platform="ios" width="2732" height="2732"/>   
 
-
   	   	   
 	         
         <allow-intent href="itms:*" />

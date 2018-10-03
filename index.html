@@ -92,9 +92,9 @@
 					</li>
 					<li><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it2"><span class="ap-main"><div class="img-men"><img src="img/treat2.png"></div> <div class="text-men"> Proven Efficiency and <br/>Reliability</div></span></a>
 					</li>
-					<li><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it3"><span class="ap-main"><div class="img-men"><img src="img/treat3.png"></div> <div class="text-men video_second_marker"> Marker Placement</div></span></a>
+					<li><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it3"><span class="ap-main"><div class="img-men"><img src="img/treat3.png"></div> <div class="text-men"> Marker Placement</div></span></a>
 					</li>
-					<li><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it4"><span class="ap-main"><div class="img-men"><img src="img/treat4.png"></div> <div class="text-men first_vid_EUS" > EUS Placement <br/>Procedure</div></span></a>
+					<li><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it4"><span class="ap-main"><div class="img-men"><img src="img/treat4.png"></div> <div class="text-men"> EUS Placement <br/>Procedure</div></span></a>
 					</li>
 					<li><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it5"><span class="ap-main"><div class="img-men"><img src="img/treat5.png"></div> <div class="text-men"> Veginal Cuff</div></span></a>
 					</li>
@@ -230,7 +230,31 @@ IM-HTML-E-Visicoil-Rov.3-1113 </p></div></div></span>
 	
 	<div class="logo_below_content">
 	<div class="video-div">
-	
+ <!--  <script type="text/javascript">
+  	
+  	//VideoPlayer.play('img/Green_man_turning_1920x1080_20001-0180_001.mp4');
+  //	cordova.plugins.videoPlayer.play("img/Green_man_turning_1920x1080_20001-0180_001.mp4");
+  	//my_video();
+  	// window.plugins.videoPlayer.play('img/Green_man_turning_1920x1080_20001-0180_001.mp4');
+  //	cordova.InAppBrowser.open('http://softweavertech.com/projects/visicoil/videos/Green_man_turning_1920x1080_20001-0180_001.mp4', '_blank', 'location=yes');
+  	 /*VideoPlayer.play(
+    "file:///android_asset/www/img/Green_man_turning_1920x1080_20001-0180_001.mp4",
+    {
+        volume: 0.5,
+        scalingMode: VideoPlayer.SCALING_MODE.SCALE_TO_FIT_WITH_CROPPING
+    },
+    function () {
+        console.log("video completed");
+    },
+    function (err) {
+        console.log(err);
+    }
+);*/
+  </script> -->
+
+
+
+
 <video width="850" height="479" loop="true" id="vid" autoplay="autoplay" webkit-playsinline playsinline >
   <source src="http://softweavertech.com/projects/visicoil/videos/Green_man_turning_1920x1080_20001-0180_001.mp4" type="video/mp4">
 </video>
@@ -1338,10 +1362,11 @@ $( window ).load(function() {
 	<video width="900" height="640" loop="true" autoplay="autoplay" id="eudvideo" webkit-playsinline playsinline>
   <source src="" type="video/mp4">
    </video>
-<script>
-$(".video_second_marker").click(function(){
-  $( '#eudvideo' ).get(0).play();
-});
+   <script>
+
+$( window ).load(function() {
+          $( '#eudvideo' ).get(0).play();
+ });
 </script>
 <div class="Proven">
 	<p>VISICOIL's Proven Efficiency and Ease of Use  <br>
@@ -1355,10 +1380,11 @@ $(".video_second_marker").click(function(){
 		<video width="800" height="600" loop="true" autoplay="autoplay" id="eusvid" webkit-playsinline playsinline>
   <source src="" type="video/mp4">
    </video>
- <script>  
-$(".first_vid_EUS").click(function(){
-  $( '#eusvid' ).get(0).play();
-});
+   <script>  
+
+$( window ).load(function() {
+          $( '#eusvid' ).get(0).play();
+ });
 </script>
 	
 	<p class="eus">This simulation procedure is demonstrated by Dr. Chris Thompson at<br/> Brigham & Women's Hospital, Boston MA.<br/> The procedure demonstrates placing Qty (2) of 0.35mm x 1cm VISICOIL via EUS.<br/> The EUS catheter being utilized is the Beacon Endoscopic Needle Platform.</p> </div>
@@ -1742,7 +1768,14 @@ $("area#dot-sixth").click(function(){
 $(".container.pop-sixth .modal.fade").addClass('in');
 $(".container.pop-sixth .modal.fade").css({"display": "block"});
 });
-
+jQuery(document).ready(function($)
+{
+   jQuery('.dropdownlist a').click(function()
+   {
+       $('.leftMenu ').removeClass('openMenu');
+  $('.hamburger').removeClass('open');
+   });
+});
 </script>
 
 

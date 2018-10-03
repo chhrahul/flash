@@ -34,7 +34,7 @@
         <config-file parent="/manifest" target="AndroidManifest.xml" xmlns:android="http://schemas.android.com/apk/res/android">
             <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
         </config-file>
-    </platform> 
+    </platform>
     <platform name="ios">
         <icon height="180" src="res/icon/ios/icon-60@3x.png" width="180" />
         <icon height="60" src="res/icon/ios/icon-60.png" width="60" />

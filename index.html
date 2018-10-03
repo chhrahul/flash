@@ -39,6 +39,9 @@
 		<link href="Asset/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 		<script src="Asset/js/bootstrap.min.js"></script>
 		<script src="Asset/js/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+	    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 		<link href="style.css" rel="stylesheet">
 		<link href="Asset/css/w3.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -54,7 +57,7 @@
 			<li id="tabs_container">
 				<a href="#" id="one" class="dropdown"><img src="img/see-ic.png" width="45" height="45"><span class="see">See</span><span class="it"> it !</span></a>
 				<ul class="dropdownlist one">
-					<li><a  class="btn btn-info" data-toggle="tab" href="#content_see_it1"><span class="ap-main"><div class="img-men"><img src="img/see1.png"></div> <div class="text-men">Visibility for Target<br/> Definition</div></span></a>
+					<li><a  class="btn btn-info" data-toggle="tab" href="#content_see_it1"><span class="ap-main"><div class="img-men"><img src="img/see1.png"></div> <div class="text-men" >Visibility for Target<br/> Definition</div></span></a>
 					</li>
 					<li><a  class="btn btn-info" id="#content2Ideal" data-toggle="tab" href="#content_see_it2"><span class="ap-main"><div class="img-men"><img src="img/see2.png"></div> <div class="text-men"> VISICOIL Clinical<br/> Images</div></span></a>
 					</li>
@@ -1346,7 +1349,7 @@ $( window ).load(function() {
 
 	<video width="900" height="640" loop="true" autoplay="autoplay" id="eudvideo" webkit-playsinline playsinline>
   <!--source src="img/marker-place.mp4" type="video/mp4"-->
-  <source src="http://softweavertech.com/projects/visicoil/videos/markervideo.mp4" type="video/mp4">
+  <source src="" type="video/mp4">
    </video>
    <script>
 $(".video_second_marker").click(function(){
@@ -1363,7 +1366,7 @@ $(".video_second_marker").click(function(){
 	<div id="content_treat_it4" class="tab-pane fade">
 	<div class="placement-div">
 		<video width="800" height="600" loop="true" autoplay="autoplay" id="eusvid" webkit-playsinline playsinline>
-  <source src="http://softweavertech.com/projects/visicoil/videos/eusvideo.mp4" type="video/mp4">
+  <source src="" type="video/mp4">
    </video>
  <script>  
 $(".first_vid_EUS").click(function(){
@@ -1734,6 +1737,14 @@ $(".container.pop-fifth .modal.fade").css({"display": "block"});
 $("area#dot-sixth").click(function(){
 $(".container.pop-sixth .modal.fade").addClass('in');
 $(".container.pop-sixth .modal.fade").css({"display": "block"});
+});
+$(document).ready(function($)
+{
+   $('.dropdownlist a').click(function()
+   {
+       $('.leftMenu ').removeClass('openMenu');
+  $('.hamburger').removeClass('open');
+   });
 });
 </script>
 

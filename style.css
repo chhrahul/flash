@@ -1778,3 +1778,19 @@ width: 27%;
     width: 800px;
     height: 600px;
 }
+
+
+
+@media screen and (max-width: 479px) {
+
+.markervideo1 #video {
+    width: 600px;
+    height: 300px;
+}
+.eusvideo1 #video {
+    width: 600px;
+    height: 300px;
+}
+
+
+}

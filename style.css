@@ -885,6 +885,9 @@ padding: 6px 5px;
 .tab-content {
     background: #fff;
 }
+button.close.ui-btn.ui-shadow.ui-corner-all {
+    width: 62px;
+}
 /***23 july css****/
 .nav-tabs>li>a{
     line-height: 0px;

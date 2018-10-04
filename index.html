@@ -32,7 +32,7 @@
 		
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, viewport-fit=cover ">		
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, viewport-fit=cover ">
       
         <!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
 		<link rel="icon" href="img/favicon.ico" type="image/ico" sizes="16x16">
@@ -79,9 +79,9 @@
 					</li>
 					<li><a  class="btn btn-info" data-toggle="tab" href="#content_trust_it2"><span class="ap-main"><div class="img-men"><img src="img/trust2.png"></div> <div class="text-men"> Ideal For Multiple <br/>Applications</div></span></a>
 					</li>
-					<li><a  class="btn btn-info" data-toggle="tab" href="#content_trust_it3"><span class="ap-main"><div class="img-men"><img src="img/trust3.png"></div> <div class="text-men video_second_marker"> Clinical Expert <br/>Conclusion</div></span></a>
+					<li><a  class="btn btn-info" data-toggle="tab" href="#content_trust_it3"><span class="ap-main"><div class="img-men"><img src="img/trust3.png"></div> <div class="text-men"> Clinical Expert <br/>Conclusion</div></span></a>
 					</li>
-					<li><a  class="btn btn-info" data-toggle="tab" href="#content_trust_it4"><span class="ap-main"><div class="img-men"><img src="img/trust4.png"></div> <div class="text-men first_vid_EUS"> Clinical Studies</div></span></a>
+					<li><a  class="btn btn-info" data-toggle="tab" href="#content_trust_it4"><span class="ap-main"><div class="img-men"><img src="img/trust4.png"></div> <div class="text-men"> Clinical Studies</div></span></a>
 					</li>
 					<li><a  class="btn btn-info" data-toggle="tab" href="#content_trust_it5"><span class="ap-main"><div class="img-men"><img src="img/trust5.png"></div> <div class="text-men"> 4 MRI Safety</div></span></a>
 					</li>
@@ -96,9 +96,9 @@
 					</li>
 					<li><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it2"><span class="ap-main"><div class="img-men"><img src="img/treat2.png"></div> <div class="text-men"> Proven Efficiency and <br/>Reliability</div></span></a>
 					</li>
-					<li><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it3"><span class="ap-main"><div class="img-men"><img src="img/treat3.png"></div> <div class="text-men"> Marker Placement</div></span></a>
+					<li class="videoo1"><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it3"><span class="ap-main"><div class="img-men"><img src="img/treat3.png"></div> <div class="text-men"> Marker Placement</div></span></a>
 					</li>
-					<li><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it4"><span class="ap-main"><div class="img-men"><img src="img/treat4.png"></div> <div class="text-men"> EUS Placement <br/>Procedure</div></span></a>
+					<li class="videoo2"><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it4"><span class="ap-main"><div class="img-men"><img src="img/treat4.png"></div> <div class="text-men"> EUS Placement <br/>Procedure</div></span></a>
 					</li>
 					<li><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it5"><span class="ap-main"><div class="img-men"><img src="img/treat5.png"></div> <div class="text-men"> Veginal Cuff</div></span></a>
 					</li>
@@ -1347,14 +1347,19 @@ $( window ).load(function() {
 	
 	
 	<div id="content_treat_it3" class="tab-pane fade">
-
-	<video width="900" height="640" loop="true" autoplay="autoplay" id="eudvideo" webkit-playsinline playsinline>
-  <!--source src="img/marker-place.mp4" type="video/mp4"-->
-  <source src="" type="video/mp4">
-   </video>
-   <script>
-$(".video_second_marker").click(function(){
-  $( '#eudvideo' ).get(0).play();
+  
+<script>
+var video1 = $('<video />', {
+    id: 'video',
+    src: 'http://softweavertech.com/projects/visicoil/videos/markervideo.mp4',
+    type: 'video/mp4',
+    controls: true,
+    loop: true,
+    autoplay: true 
+	
+});
+$(".videoo1").click(function(){
+video1.appendTo($('#content_treat_it3'));
 });
 </script>
 <div class="Proven">
@@ -1366,12 +1371,19 @@ $(".video_second_marker").click(function(){
 	</div>
 	<div id="content_treat_it4" class="tab-pane fade">
 	<div class="placement-div">
-		<video width="800" height="600" loop="true" autoplay="autoplay" id="eusvid" webkit-playsinline playsinline>
-  <source src="" type="video/mp4">
-   </video>
- <script>  
-$(".first_vid_EUS").click(function(){
-  $( '#eusvid' ).get(0).play();
+	
+ <script>
+var video2 = $('<video />', {
+    id: 'video',
+    src: 'http://softweavertech.com/projects/visicoil/videos/eusvideo.mp4',
+    type: 'video/mp4',
+    controls: true,
+    loop: true,
+    autoplay: true
+    
+});
+$(".videoo2").click(function(){
+video2.appendTo($('#content_treat_it4 .placement-div'));
 });
 </script>
 	

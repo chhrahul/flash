@@ -879,6 +879,12 @@ padding: 6px 5px;
 }video#vidpro {
     margin-left: 40px;
 }
+.rght_cont {
+    background: #fff;
+}
+.tab-content {
+    background: #fff;
+}
 /***23 july css****/
 .nav-tabs>li>a{
     line-height: 0px;

@@ -93,7 +93,6 @@
 	<preference name="AllowInlineMediaPlayback" value="true"/>
 	
 	<preference name="AutoHideSplashScreen" value="true" />
-	<preference name="ShowSplashScreenSpinner" value="true"/>
 	<preference name="splashscreen" value="splash" />
     <preference name="splashScreenDelay" value="3000" />
 	

@@ -98,6 +98,9 @@
 	<preference name="ShowSplashScreenSpinner" value="true"/>
 	<preference name="splashscreen" value="splash" />
     <preference name="splashScreenDelay" value="3000" />
+	<allow-navigation href="*youtube*" />
+	<allow-navigation href="*ytimg*" />
+	<allow-navigation href="*youtube-nocookie*" />
 	
 	 
 </widget>

@@ -1784,12 +1784,12 @@ width: 27%;
 @media screen and (max-width: 479px) {
 
 .markervideo1 #video {
-    width: 600px;
-    height: 300px;
+    width: 400px;
+    height: 250px;
 }
 .eusvideo1 #video {
-    width: 600px;
-    height: 300px;
+    width: 400px;
+    height: 250px;
 }
 
 

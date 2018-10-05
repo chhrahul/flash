@@ -64,7 +64,7 @@
 					</li>
 					<li><a  class="btn btn-info" data-toggle="tab" href="#content_see_it3"><span class="ap-main"><div class="img-men"><img src="img/see3.png"></div> <div class="text-men"> Visibility for Precise <br/>Image-Guided Setup</div></span></a>
 					</li>
-					<li><a  class="btn btn-info" data-toggle="tab" href="#content_see_it4"><span class="ap-main"><div class="img-men"><img src="img/see4.png"></div> <div class="text-men">  Visibility During Marker <br/>Placement</div></span></a>
+					<li class="videoo3"><a  class="btn btn-info" data-toggle="tab" href="#content_see_it4"><span class="ap-main"><div class="img-men"><img src="img/see4.png"></div> <div class="text-men">  Visibility During Marker <br/>Placement</div></span></a>
 					</li>
 					<li><a  class="btn btn-info" data-toggle="tab" href="#content_see_it5"><span class="ap-main"><div class="img-men"><img src="img/see5.png"></div> <div class="text-men"> MRI Visibility for <br/>VISICOIL MR Marker</div></span></a>
 					</li>
@@ -513,14 +513,22 @@ function showDivs(n) {
 
 <div id="content_see_it4" class="tab-pane fade">
 <div class="see_it4_img">
-<div id="vid-jun">
-<video width="800" height="480" loop="true" autoplay="autoplay" id="vid-visibility" webkit-playsinline playsinline>  
+<div class="vid-jun">
 
-<source src="img/markerplace.mp4" type="video/mp4">
-</video>
 <script>
-$( window ).load(function() {          
-$( '#vid-visibility' ).get(0).play(); 
+
+var video3 = $('<video />', {
+    id: 'video',
+    src: 'http://softweavertech.com/projects/visicoil/videos/markerplace.mp4',
+    type: 'video/mp4',
+	controls: false,
+    loop: true,
+    autoplay: true,
+	playsInline: true
+    
+});
+$(".videoo3").click(function(){
+video3.appendTo($('#content_see_it4 .vid-jun'));
 });
 </script>
 </div>
@@ -1353,6 +1361,7 @@ var video1 = $('<video />', {
     id: 'video',
     src: 'http://softweavertech.com/projects/visicoil/videos/markervideo.mp4',
     type: 'video/mp4',
+	controls: false,
     loop: true,
     autoplay: true,
     playsInline: true	
@@ -1378,6 +1387,7 @@ var video2 = $('<video />', {
     id: 'video',
     src: 'http://softweavertech.com/projects/visicoil/videos/eusvideo.mp4',
     type: 'video/mp4',
+	controls: false,
     loop: true,
     autoplay: true,
 	playsInline: true

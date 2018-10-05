@@ -64,8 +64,7 @@
        <splash src="res/screen/ios/Default@2x~ipad~comany.png" platform="ios" width="1278" height="2732"/>
 	   <splash src="res/screen/ios/Default@2x~universal~anyany.png" platform="ios" width="2732" height="2732"/>
        <splash src="res/screen/ios/splash.png" platform="ios" width="2732" height="2732"/>   
-
-  	   	   
+ 	   	   
 	         
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
@@ -92,7 +91,6 @@
 	<preference name="MediaPlaybackAllowsAirPlay" value="false"/>
 	<preference name="MediaPlaybackRequiresUserAction" value="false"/>
 	<preference name="AllowInlineMediaPlayback" value="true"/>
-	<preference name="TopActivityIndicator" value="white"/>
 	
 	<preference name="AutoHideSplashScreen" value="true" />
 	<preference name="ShowSplashScreenSpinner" value="true"/>

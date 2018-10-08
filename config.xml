@@ -64,8 +64,6 @@
        <splash src="res/screen/ios/Default@2x~ipad~comany.png" platform="ios" width="1278" height="2732"/>
 	   <splash src="res/screen/ios/Default@2x~universal~anyany.png" platform="ios" width="2732" height="2732"/>
        <splash src="res/screen/ios/splash.png" platform="ios" width="2732" height="2732"/>   
-
-  	   	   
 	         
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
@@ -87,12 +85,11 @@
     <plugin name="cordova-plugin-filepath" spec="^1.4.2" />
 	<plugin name="cordova-plugin-streaming-media" spec="https://github.com/nchutchind/cordova-plugin-streaming-media" />
     <engine name="android" spec="^7.0.0" />
-
 	<preference name="EnableViewportScale" value="true"/>
+	<preference name="MediaPlaybackAllowsAirPlay" value="false"/>
 	<preference name="MediaPlaybackRequiresUserAction" value="false"/>
 	<preference name="AllowInlineMediaPlayback" value="true"/>
-
-	
+	<preference name="TopActivityIndicator" value="white"/>
 	<preference name="AutoHideSplashScreen" value="true" />
 	<preference name="ShowSplashScreenSpinner" value="true"/>
 	<preference name="splashscreen" value="splash" />
@@ -102,6 +99,4 @@
 	<allow-navigation href="*youtube-nocookie*" />
 	<allow-navigation href="https://*youtube.com/*"/>
 	
-	
-	 
 </widget>

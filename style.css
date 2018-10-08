@@ -7,10 +7,6 @@ html, body {
   overflow-x: hidden !important;
   overflow-y: hidden !important;
 }
-.tab-content{
-  overflow-x: hidden !important;
-  overflow-y: hidden !important;
-}
 
 h1{color:#fff;margin:30px auto;display:table;text-align:center;}
 i.fa {font-size: 25px;padding: 9px;width: 30px;text-align: center;text-shadow:1px 1px 1px #000;}

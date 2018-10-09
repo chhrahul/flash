@@ -9,10 +9,6 @@ html, body {
   overflow-y: hidden;
   width:100%;
 }
-.control-group .controls {
-     overflow-x: hidden;
-     overflow-y: hidden;
- }
 
 h1{color:#fff;margin:30px auto;display:table;text-align:center;}
 i.fa {font-size: 25px;padding: 9px;width: 30px;text-align: center;text-shadow:1px 1px 1px #000;}

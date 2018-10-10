@@ -78,8 +78,8 @@ function openFile(filePath, fileMIMEType) {
 	var fileName = filename;
 	//var fileTransfer = new FileTransfer();
 	//var uri = encodeURI(fileUrl);
-  alert(fileUrl)
-  alert(fileName)
+  alert(device.platform)
+  ///alert(fileName)
 	if(device.platform == 'Android')
   {
       var fileUrl = cordova.file.externalCacheDirectory;
@@ -87,5 +87,5 @@ function openFile(filePath, fileMIMEType) {
   else {
       var fileUrl = cordova.file.documentsDirectory;
   }  
-   alert(fileUrl)
+   ///alert(fileUrl)
 }

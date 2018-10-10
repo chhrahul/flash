@@ -29,7 +29,10 @@ function openFile(filePath, fileMIMEType) {
 	});
 }
 
-
+ function checkme(abc)
+ {
+ alert(abc)
+ }
 
 
 	function downloadDoc(filename) {

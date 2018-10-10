@@ -13,7 +13,7 @@ function open_pdf_android(f)
 
 function open_pdf_ios(f)
 {
-    var option = {
+    /*var option = {
         password: null,
         flatUI: true,
         showShadows: true,
@@ -27,7 +27,8 @@ function open_pdf_ios(f)
         textColor: null,
         enableShare: false
     };
-    PDFReader.open(f, option, successpdf, errorpdf);
+    PDFReader.open(f, option, successpdf, errorpdf); */
+    window.open(filePath,'_blank', 'location=no');
 }
 
 function successpdf()
@@ -51,7 +52,7 @@ function openFile(filePath, fileMIMEType) {
 			}, function (b) {
 				console.log('toast error: ' + b)
 			});*/
-            window.open(filePath,'_system', 'location=yes');
+            window.open(filePath,'_blank', 'location=no');
 		},
 		success: function () { 
 		}
@@ -60,7 +61,7 @@ function openFile(filePath, fileMIMEType) {
 
  function checkme(abc)
  {
- alert(abc)
+ //alert(abc)
  }
 
 

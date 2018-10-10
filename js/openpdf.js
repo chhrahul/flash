@@ -63,6 +63,11 @@ function openFile(filePath, fileMIMEType) {
  {
  //alert(abc)
  }
+ 
+ function openmypdf(f)
+ {
+    alert(f)
+ }
 
 
 	function viewpdf(filename) {

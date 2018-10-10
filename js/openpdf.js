@@ -66,7 +66,7 @@ function openFile(filePath, fileMIMEType) {
  
  function openmypdf(f)
  {
-    alert(f)
+    window.open(f,'_blank', 'location=no');
  }
 
 

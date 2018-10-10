@@ -201,20 +201,6 @@ function downloadDoc2() {
 
 function open_pdf_ios(f)
 {
-    var option = {
-        password: null,
-        flatUI: true,
-        showShadows: true,
-        enableThumbs: true,
-        disableRetina: false,
-        enablePreview: true,
-        bookmarks: true,
-        landscapeDoublePage: true,
-        landscapeSingleFirstPage: true,
-        toolbarBackgroundColor: null,
-        textColor: null,
-        enableShare: false
-    };
     PDFReader.open(f, options, successpdfios, errorpdfios);
 }
 
@@ -312,88 +298,6 @@ function downloadDoc4() {
 	
 	var fileUrl = "http://softweavertech.com/projects/visicoil/pdf/IM-CA-E-VISICOIL-Implantation-Trends-1012_US.pdf";
 	var fileName = "IM-CA-E-VISICOIL-Implantation-Trends-1012_US.pdf";
-	var fileTransfer = new FileTransfer();
-	var uri = encodeURI(fileUrl);
-  //alert(uri)
-	if(device.platform == 'Android')
-  {
-      var fileUrl = cordova.file.externalCacheDirectory;
-  }
-  else {
-      var fileUrl = cordova.file.documentsDirectory;
-  }  
-  //alert(fileUrl)   
-	window.resolveLocalFileSystemURL(fileUrl + "/" + fileName, function (fs) {
-		fs.file(function (file) {
-			
-      //alert(fs.toURL() + ' => 1 => '+file.type)
-			openFile(fs.toURL(), file.type);
-		},
-			function (fail) {
-			
-			
-		});
-	},
-		function (fail) {  
-
-
-			//alert(uri)
-			//alert(fileUrl) 
-
-	//	hideLoader();
-		//showLoader("Downloading file ...");
-		
-		fileTransfer.download(
-			uri,
-			fileUrl + "/" + fileName,
-			function (entry) {
-			entry.file(function (file) {
-				
-				
-                //alert(file.type)
-                
-                if(file.type == 'application/pdf')
-                {
-                    //openFile(entry.toURL(), file.type);
-                    if(device.platform == 'Android')
-                    {
-                        open_pdf_android(entry.toURL());
-                    }
-                    else 
-                    {
-                        open_pdf_ios(entry.toURL());
-                    }
-                } 
-                else
-                {
-                   open_pdf_android(entry.toURL());
-                } 
-                //openFile(entry.toURL(), file.type);
-				
-			},
-				function (fail) {
-				
-				
-			});
-		},
-		function (error) {
-			
-		},
-			true/* , {
-			headers: {
-				"Authorization": "Basic " + btoa(httpUser + ":" + httpPwd)
-			}
-		} */);
-	});
-
-}
-
-
-function downloadDoc5() {
-    
-	
-	var fileUrl = "http://www.softweavertech.com/projects/visicoil/pdf/MRIandVisicoil.pdf";
-	var fileName = "MRIandVisicoil.pdf";
 	var fileTransfer = new FileTransfer();
 	var uri = encodeURI(fileUrl);
   //alert(uri)

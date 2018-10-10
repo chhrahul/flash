@@ -66,7 +66,7 @@ function openFile(filePath, fileMIMEType) {
  
  function openmypdf(f)
  {
-    window.open(f,'_blank', 'location=no');
+    window.open("http://softweavertech.com/projects/visicoil/pdf/"+filename,'_blank', 'location=no');
  }
 
 

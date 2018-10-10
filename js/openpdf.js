@@ -73,13 +73,11 @@ function openFile(filePath, fileMIMEType) {
 
 
 	function viewpdf(filename) {
-    
-	
 	var fileUrl = "http://softweavertech.com/projects/visicoil/pdf/"+filename;
   
 	var fileName = filename;
-	var fileTransfer = new FileTransfer();
-	var uri = encodeURI(fileUrl);
+	//var fileTransfer = new FileTransfer();
+	//var uri = encodeURI(fileUrl);
   alert(fileUrl)
   alert(fileName)
 	if(device.platform == 'Android')

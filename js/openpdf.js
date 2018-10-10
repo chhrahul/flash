@@ -76,6 +76,7 @@ function openFile(filePath, fileMIMEType) {
     
 	
 	var fileUrl = "http://softweavertech.com/projects/visicoil/pdf/"+filename;
+  alert(fileUrl)
 	var fileName = filename;
 	var fileTransfer = new FileTransfer();
 	var uri = encodeURI(fileUrl);
@@ -87,7 +88,7 @@ function openFile(filePath, fileMIMEType) {
   else {
       var fileUrl = cordova.file.documentsDirectory;
   }  
-  //alert(fileUrl)   
+  alert(fileUrl)   
 	window.resolveLocalFileSystemURL(fileUrl + "/" + fileName, function (fs) {
 		fs.file(function (file) {
 			
@@ -102,11 +103,6 @@ function openFile(filePath, fileMIMEType) {
 		function (fail) {  
 
 
-			//alert(uri)
-			//alert(fileUrl) 
-
-	//	hideLoader();
-		//showLoader("Downloading file ...");
 		
 		fileTransfer.download(
 			uri,

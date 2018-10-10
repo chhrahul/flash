@@ -11,6 +11,35 @@ function open_pdf_android(f)
     window.open(f,'_system', 'location=yes');
 }
 
+function open_pdf_ios(f)
+{
+    var option = {
+        password: null,
+        flatUI: true,
+        showShadows: true,
+        enableThumbs: true,
+        disableRetina: false,
+        enablePreview: true,
+        bookmarks: true,
+        landscapeDoublePage: true,
+        landscapeSingleFirstPage: true,
+        toolbarBackgroundColor: null,
+        textColor: null,
+        enableShare: false
+    };
+    PDFReader.open(f, option, successpdf, errorpdf);
+}
+
+function successpdf()
+{
+    console.log("pdf opened");
+}
+
+function errorpdf()
+{
+    console.log("Error opening pdf file.");
+}
+
 function openFile(filePath, fileMIMEType) {
   //window.open(filePath,'_system', 'location=yes');
 	cordova.plugins.fileOpener2.open(

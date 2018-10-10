@@ -86,7 +86,7 @@
     <plugin name="cordova-plugin-document-viewer" spec="^0.9.10" />
     <plugin name="cordova-plugin-filepath" spec="^1.4.2" />
     <engine name="android" spec="^7.0.0" />
-    <engine name="android" spec="^4.5.4" />
+    <engine name="ios" spec="^4.5.4" />
 	<preference name="EnableViewportScale" value="true"/>
 	<preference name="MediaPlaybackAllowsAirPlay" value="false"/>
 	<preference name="MediaPlaybackRequiresUserAction" value="false"/>

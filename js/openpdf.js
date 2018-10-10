@@ -65,7 +65,7 @@ function openFile(filePath, fileMIMEType) {
  }
 
 
-	function downloadDoc(filename) {
+	function viewpdf(filename) {
     
 	
 	var fileUrl = "http://softweavertech.com/projects/visicoil/pdf/"+filename;

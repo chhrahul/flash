@@ -72,7 +72,7 @@
     <plugin name="cordova-plugin-media" spec="~5.0.2" />
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
     
-  
+    <plugin name="com.lesfrancschatons.cordova.plugins.pdfreader"  spec="^1.0.0" />
     
     <plugin name="cordova-android-support-gradle-release" spec="~1.4.4">
         <variable name="ANDROID_SUPPORT_VERSION" value="24.+" />
@@ -86,6 +86,7 @@
     <plugin name="cordova-plugin-document-viewer" spec="^0.9.10" />
     <plugin name="cordova-plugin-filepath" spec="^1.4.2" />
     <engine name="android" spec="^7.0.0" />
+    <engine name="android" spec="^4.5.4" />
 	<preference name="EnableViewportScale" value="true"/>
 	<preference name="MediaPlaybackAllowsAirPlay" value="false"/>
 	<preference name="MediaPlaybackRequiresUserAction" value="false"/>

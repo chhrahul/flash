@@ -76,11 +76,12 @@ function openFile(filePath, fileMIMEType) {
     
 	
 	var fileUrl = "http://softweavertech.com/projects/visicoil/pdf/"+filename;
-  alert(fileUrl)
+  
 	var fileName = filename;
 	var fileTransfer = new FileTransfer();
 	var uri = encodeURI(fileUrl);
-  alert(uri)
+  alert(fileUrl)
+  alert(fileName)
 	if(device.platform == 'Android')
   {
       var fileUrl = cordova.file.externalCacheDirectory;
@@ -88,63 +89,5 @@ function openFile(filePath, fileMIMEType) {
   else {
       var fileUrl = cordova.file.documentsDirectory;
   }  
-  alert(fileUrl)   
-	window.resolveLocalFileSystemURL(fileUrl + "/" + fileName, function (fs) {
-		fs.file(function (file) {
-			
-      //alert(fs.toURL() + ' => 1 => '+file.type)
-			openFile(fs.toURL(), file.type);
-		},
-			function (fail) {
-			
-			
-		});
-	},
-		function (fail) {  
-
-
-		
-		fileTransfer.download(
-			uri,
-			fileUrl + "/" + fileName,
-			function (entry) {
-			entry.file(function (file) {
-				
-				
-                //alert(file.type)
-                
-                if(file.type == 'application/pdf')
-                {
-                    //openFile(entry.toURL(), file.type);
-                    if(device.platform == 'Android')
-                    {
-                        open_pdf_android(entry.toURL());
-                    }
-                    else 
-                    {
-                        open_pdf_ios(entry.toURL());
-                    }
-                } 
-                else
-                {
-                   open_pdf_android(entry.toURL());
-                } 
-                //openFile(entry.toURL(), file.type);
-				
-			},
-				function (fail) {
-				
-				
-			});
-		},
-		function (error) {
-			
-		},
-			true/* , {
-			headers: {
-				"Authorization": "Basic " + btoa(httpUser + ":" + httpPwd)
-			}
-		} */);
-	});
-
+   alert(fileUrl)
 }

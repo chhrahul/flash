@@ -66,7 +66,9 @@ function openFile(filePath, fileMIMEType) {
  
  function openmypdf(f)
  {
-    cordova.InAppBrowser.open("http://softweavertech.com/projects/visicoil/pdf/"+f,'_blank', 'location=no');
+    var url = "http://softweavertech.com/projects/visicoil/pdf/"+f;
+    alert(url)
+    cordova.InAppBrowser.open(url,'_system', 'location=no');
  }
 
 

@@ -73,7 +73,8 @@ function openFile(filePath, fileMIMEType) {
 
 
 	function viewpdf(filename) {
-	var fileUrl = "http://softweavertech.com/projects/visicoil/pdf/"+filename;
+	$(document).on("deviceready", function () {
+  var fileUrl = "http://softweavertech.com/projects/visicoil/pdf/"+filename;
   
 	var fileName = filename;
 	//var fileTransfer = new FileTransfer();
@@ -88,4 +89,5 @@ function openFile(filePath, fileMIMEType) {
       var fileUrl = cordova.file.documentsDirectory;
   }  
    ///alert(fileUrl)
+   });
 }

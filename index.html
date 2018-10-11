@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, shrink-to-fit=no, viewport-fit=cover">
-        <meta name=”viewport” content=”initial-scale=1, width=device-width, height=device-height, viewport-fit=cover”>
+      
         <!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
 		<link rel="icon" href="img/favicon.ico" type="image/ico" sizes="16x16">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link href="Asset/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 		<script src="Asset/js/bootstrap.min.js"></script>
 		<script src="Asset/js/jquery-1.11.1.min.js"></script>
+
 		<link href="style.css" rel="stylesheet">
 		<link href="Asset/css/w3.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		
         <title>VISICOIL - Flexible Soft Tissue Markers</title>
-        <script type="text/javascript" src="js/videoplayer.js"></script>
+        <script type="text/javascript" src="js/openpdf.js"></script>
 		
-    </head>
-    <body>
-	<div class="leftMenu">
+    </head> 
+	<body>
+    <div class="leftMenu">
 		<div class="hamburger close"><span></span><span></span><span></span></div>
 		<ul class="nav nav-tabs">		
 			<li id="tabs_container">
 				<a href="#" id="one" class="dropdown"><img src="img/see-ic.png" width="45" height="45"><span class="see">See</span><span class="it"> it !</span></a>
 				<ul class="dropdownlist one">
-					<li><a  class="btn btn-info" data-toggle="tab" href="#content_see_it1"><span class="ap-main"><div class="img-men"><img src="img/see1.png"></div> <div class="text-men">Visibility for Target<br/> Definition</div></span></a>
+					<li><a  class="btn btn-info" data-toggle="tab" href="#content_see_it1"><span class="ap-main"><div class="img-men"><img src="img/see1.png"></div> <div class="text-men" >Visibility for Target<br/> Definition</div></span></a>
 					</li>
 					<li><a  class="btn btn-info" id="#content2Ideal" data-toggle="tab" href="#content_see_it2"><span class="ap-main"><div class="img-men"><img src="img/see2.png"></div> <div class="text-men"> VISICOIL Clinical<br/> Images</div></span></a>
 					</li>
 					<li><a  class="btn btn-info" data-toggle="tab" href="#content_see_it3"><span class="ap-main"><div class="img-men"><img src="img/see3.png"></div> <div class="text-men"> Visibility for Precise <br/>Image-Guided Setup</div></span></a>
 					</li>
-					<li><a  class="btn btn-info" data-toggle="tab" href="#content_see_it4"><span class="ap-main"><div class="img-men"><img src="img/see4.png"></div> <div class="text-men">  Visibility During Marker <br/>Placement</div></span></a>
+					<li class="videoo3"><a  class="btn btn-info" data-toggle="tab" href="#content_see_it4"><span class="ap-main"><div class="img-men"><img src="img/see4.png"></div> <div class="text-men">  Visibility During Marker <br/>Placement</div></span></a>
 					</li>
 					<li><a  class="btn btn-info" data-toggle="tab" href="#content_see_it5"><span class="ap-main"><div class="img-men"><img src="img/see5.png"></div> <div class="text-men"> MRI Visibility for <br/>VISICOIL MR Marker</div></span></a>
 					</li>
@@ -66,7 +69,7 @@
 					</li>
 					<li class="videoo1"><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it3"><span class="ap-main"><div class="img-men"><img src="img/treat3.png"></div> <div class="text-men"> Marker Placement</div></span></a>
 					</li>
-					<li class="videoo2"> <a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it4"><span class="ap-main"><div class="img-men"><img src="img/treat4.png"></div> <div class="text-men"> EUS Placement <br/>Procedure</div></span></a>
+					<li class="videoo2"><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it4"><span class="ap-main"><div class="img-men"><img src="img/treat4.png"></div> <div class="text-men"> EUS Placement <br/>Procedure</div></span></a>
 					</li>
 					<li><a  class="btn btn-info" data-toggle="tab"  href="#content_treat_it5"><span class="ap-main"><div class="img-men"><img src="img/treat5.png"></div> <div class="text-men"> Veginal Cuff</div></span></a>
 					</li>
@@ -111,6 +114,9 @@
 								<div class="tst-main">
                     <p class="fig-text">"The type of ... fiducial marker that we are employing has several advantages. One is the flexibility of the coiled marker. The other is the length. Together these characteristics allow ease of radial placement. We feel the coiled design lessens potential for migration."</p> 
                     <p class="fig-name">McGuire FR, Kerley JM, Ochran T, et al. Radiotherapy monitoring device implantation into peripheral lung cancers: A therapeutic utility of electromagnetic navigational bronchoscopy. J Broncol 2007:189-192. </p></div> </div></span></li>
+               
+				<!--div class="image-idc">
+				<img class="test-imgl" src="img/test-last.png"/></div-->
              </ul>
 			</li>
 			<li class="myt">
@@ -119,11 +125,8 @@
 		            <li><span class="ap-main"> <div class="text-men">								
 	                   <div class="ele1 frt">							
                          <h3>Brochures </h3>
-
-               
-                           <p class="mate"><a class="materil"  href="#" onclick="downloadDoc();">VISICOIL - Flexible Soft Tissue Marker</a></p> 
-                          <p class="mate"><a class="materil" href="#" onclick="downloadDoc2();" >VISICOIL Flyer</a></p>
-							  
+                           <p class="mate"><a class="materil" href="#" onclick="downloadDoc();" href="#">VISICOIL - Flexible Soft Tissue Marker</a></p> 
+                           <p class="mate"><a class="materil" href="#" onclick="downloadDoc2();">VISICOIL Flyer</a></p>
                     </div></div></span>
 					</li>
 					<li><span class="ap-main"> <div class="text-men">
@@ -137,6 +140,9 @@
 		<div class="ele2">
 			<p class="mate">In order to view these pdf files, please make sure that the Acrobat Reader is installed! </p>
 		</div></div></span></li>
+
+				<!--div class="image-idc">
+				<img class="test-imgl" src="img/test-last.png"/></div-->
 
 				</ul>
 			</li>
@@ -184,8 +190,15 @@
 <p class="cont-fig">© 2013 IBA Dosimetry GmbH 
 IM-HTML-E-Visicoil-Rov.3-1113 </p></div></div></span>
 					</li>
+
+<!--li><span class="ap-main"> <div class="text-men">
+<div class="image-cont">
+				<img class="cont-imgl" src="img/test-last.png"/></div>		
+
+</div></span>
+					</li-->
 			</ul></li>
-			  
+			
 			<li class="test last">
 				<a href="http://www.iba-dosimetry.com/solutions/visicoil-linear-fiducial-markers/" target="blank"><img src="img/link-ic.png" width="45" height="45"></a>
 				
@@ -198,7 +211,7 @@ IM-HTML-E-Visicoil-Rov.3-1113 </p></div></div></span>
     <div class="logo_let"><img src="img/logo_3.png"/></div>
 	<div class="logo_rght"><img src="img/logo-right_3.png"></div>
 	</div>
-	
+	 
 	
 	<div class="logo_below_content">
 	<div class="video-div">
@@ -265,7 +278,8 @@ $( window ).load(function() {
 	<div class="bottom_cont">
 <p><a class="materil" href="#" onclick="downloadDoc5();">1) Jonsson JH, Garpebring A, Karlsson MG, et al. Internal fiducial markers and susceptibility effects in MRI-simulation and measurement <br>of spatial accuracy. Int J Radiat Biol Phys 2012;1612-1618.</p></a></div>
 	</p>
-	</div>
+	</div> 
+	
 	
  <!-- FlexSlider frt -->
 
@@ -470,7 +484,8 @@ function showDivs(n) {
 
 <div id="content_see_it4" class="tab-pane fade">
 <div class="see_it4_img">
-<div id="vid-jun">
+<div class="vid-jun">
+
 <script>
 $('.videoo3').click(function() {
     $('#content_see_it4 .vid-jun').html('<iframe width="400" height="250" src="https://www.youtube.com/embed/gXs-c_rFC4w?autoplay=1&showinfo=0&controls=0&loop=1&playlist=GRonxog5mbw" frameborder="0" allowfullscreen></iframe>');
@@ -670,7 +685,7 @@ MRI/CT fusion and IGRT
             <div class="col-sm-4">
                <img class="pop-img1" src="img/flexible.png">
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-8 flex_mark">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
 			   <div class="pop-content">
    <script>
@@ -920,7 +935,7 @@ $(".flex_mark #video").css('height','250px');
 	
 	<div class="aut-firt">
 	<div class="video-div">
-<video width="850" height="479" loop="true" autoplay="autoplay" id="vidsec">
+<video width="850" height="479" loop="true" autoplay="autoplay" id="vidsec" webkit-playsinline playsinline>
   <source src="img/Green_man_turning_1920x1080_20001-0180_001.mp4" type="video/mp4">
 </video>
 <script>
@@ -940,24 +955,24 @@ var t = setTimeout(function(){ $('.aut-firt').fadeOut(); }, 2000);
  $(".aut-sec img").delay(2000).animate({"opacity": "1"}, 2000);
  $('.aut-firt').fadeIn();
 
- var t = setTimeout(function(){ $('.aut-firt').fadeOut(); }, 3000);
+ /*var t = setTimeout(function(){ $('.aut-firt').fadeOut(); }, 3000);
  if(t){
  $("#aut-sec").hide();
  }
  $("#aut-sec").show();
- $('.aut-firt').fadeIn();
+ $('.aut-firt').fadeIn();*/
  
 
 
-       setTimeout(function() { 
-        $('.aut-firt').fadeOut();}, 2000);		
-  });
-     $("#tmer").click(function(){
-     
+       //setTimeout(function() { 
+    //    $('.aut-firt').fadeOut();}, 2000);		
+  //});
+     //$("#tmer").click(function(){
+     // 
 	 
-}); 	  
+//}); 	  
  }
-if($(this).attr("id")=="tmer"){
+/*if($(this).attr("id")=="tmer"){
  $("#tmer").click(function(){
       setTimeout(function() { 
         $('.aut-firt').fadeOut();}, 2000);		
@@ -968,7 +983,7 @@ if($(this).attr("id")=="tmer"){
   }
   else{
     alert'no id select';
-  }
+  }*/
  
 </script>
 </div>
@@ -999,7 +1014,7 @@ if($(this).attr("id")=="tmer"){
       <div class="modal-content">
         <div class="modal-header">
 		          <h4 class="modal-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tongue, Tonsil</h4>
-          <button type="button" class="close" data-dismiss="modal">×</button>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
          
         </div>
         <div class="modal-body">
@@ -1043,7 +1058,7 @@ if($(this).attr("id")=="tmer"){
       <div class="modal-content">
         <div class="modal-header">
 		          <h4 class="modal-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lung</h4>
-          <button type="button" class="close" data-dismiss="modal">×</button>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
          
         </div>
         <div class="modal-body">
@@ -1105,7 +1120,7 @@ function carousel() {
       <div class="modal-content">
         <div class="modal-header">
 		          <h4 class="modal-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Breast</h4>
-          <button type="button" class="close" data-dismiss="modal">×</button>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
          
         </div>
         <div class="modal-body">
@@ -1148,7 +1163,7 @@ function carousel() {
       <div class="modal-content">
         <div class="modal-header">
 		          <h4 class="modal-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Liver</h4>
-          <button type="button" class="close" data-dismiss="modal">×</button>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
          
         </div>
         <div class="modal-body">
@@ -1194,7 +1209,7 @@ $(".liver_popup video#video").css('height','250px');
       <div class="modal-content">
         <div class="modal-header">
 		          <h4 class="modal-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pancreas</h4>
-          <button type="button" class="close" data-dismiss="modal">×</button>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
          
         </div>
         <div class="modal-body">
@@ -1238,7 +1253,7 @@ $(".liver_popup video#video").css('height','250px');
         <div class="modal-header">
 		          <h4 class="modal-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prostate</h4>
 
-          <button type="button" class="close" data-dismiss="modal">×</button>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
          
         </div>
         <div class="modal-body">
@@ -1296,7 +1311,6 @@ $(".liver_popup video#video").css('height','250px');
 	
 	
 	<div id="content_treat_it3" class="tab-pane fade">
-
   <div class="markervideo1">
 <script>
 $('.videoo1').click(function() {
@@ -1493,29 +1507,15 @@ Approved by Interventional Radiology </h3>
 </div>
 </div>
 </div></div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
-	
-        <!--<div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>-->
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-         <script type="text/javascript" src="js/common.js"></script>
-    </body>
+	<script type="text/javascript" src="js/common.js"></script>
+  </body>
 </html>
 
 <script>
 $(document).ready(function(){
-	/*function my_video(){
-		 window.plugins.videoPlayer.play('img/Green_man_turning_1920x1080_20001-0180_001.mp4');
-   // cordova.plugins.videoPlayer.play("img/Green_man_turning_1920x1080_20001-0180_001.mp4");
-};*/
 	document.querySelector(".hamburger").onclick = function () {
 		var element = document.querySelector(".leftMenu");
 		  element.classList.toggle("openMenu");
@@ -1639,10 +1639,10 @@ $(".test img").click(function(){
     $(".leftMenu").addClass('openMenu');
 	$(".hamburger").addClass('open');
 });
-$(".top-logo-img .logo_let img").click(function(){
+$(".top-logo-img").click(function(){
     $(".logo_below_content").show();
 	$(".tab-content").hide();
-});
+});  
 $(".btn.btn-info").click(function(){
 $(".tab-content").show();
 });
@@ -1711,5 +1711,4 @@ $(document).ready(function()
    });
 });
 </script>
-
 

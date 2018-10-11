@@ -6,14 +6,14 @@ function getMessage(msg, button) {
 function openPdf(filePath)
 {
    //alert(filePath);
-   window.open(filePath,'_system');
+   window.open(filePath,'_blank');
 }
 
 
 function open_pdf_android(f)
 {
     //alert(f);
-    window.open(f,'_system', 'location=yes');
+    window.open(f,'_blank', 'location=no');
 }
 
 function openFile(filePath, fileMIMEType) {
@@ -27,7 +27,7 @@ function openFile(filePath, fileMIMEType) {
 			}, function (b) {
 				console.log('toast error: ' + b)
 			});*/
-            window.open(filePath,'_system', 'location=yes');
+            window.open(filePath,'_blank', 'location=no');
 		},
 		success: function () { 
 		}

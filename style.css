@@ -4,9 +4,15 @@ body {
  padding-top: env(safe-area-inset-top); /* iOS 11.2 */
 }
 html, body {
+<<<<<<< HEAD
   overflow-x: hidden !important;
   overflow-y: hidden !important;
   height: 100%;
+=======
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width:100%;
+>>>>>>> 26b4e1dc6870979beb39535ed532923faf9e3ee9
 }
 
 h1{color:#fff;margin:30px auto;display:table;text-align:center;}

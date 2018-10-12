@@ -28,6 +28,16 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
+		
+		.run(function($ionicPlatform) {
+  $ionicPlatform.ready(function() {
+    if (window.StatusBar) {
+      // Set the statusbar to use the default style, tweak this to
+      // remove the status bar or change it to use white instead of dark colors.
+      StatusBar.hide();
+    }
+  });
+});
     },
 
     // Update DOM on a Received Event

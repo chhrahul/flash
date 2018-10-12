@@ -28,7 +28,6 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
-		StatusBar.hide();
     },
 
     // Update DOM on a Received Event
